@@ -1,68 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>service</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
-</head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<body>
- 
+  <body>
 
-    <script>
-        const obtenerUsuario = async ()=> { // asyinc = no va en cascada
-    
-            const servicio = "https://reqres.in/api/users?page=2"  //hacer una peticion a este servicio para acccder a sus valores 
-       
-            // try catch tolerancia a errores , si llega a tronar algo se puede mostrar algo no tan feo 
-            try { 
-    
-                const response = await fetch(servicio,{ //await espera la promesa (fetch)
-                    method:"GET",
-                    headers:{ "Content-Type": "application/json" },
-    
-                }); //es una equivalencia a una promesa sus parametros (a donde va, manera de pedir los datos,cabeceras tipo de datos)
-                
-                // return response;
-                const json= await response.json();
-                console.log(json.data)
-    
-            } catch (error) {
-                console.log("error") ;
-            }
+        <h1 class="text-center p-4">Tabla usuarios</h1>
+        <table class="table table-bordered table-dark">
+            <thead>
+              <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col">Apellido</th>
+                <th scope="col">E-mail</th>
+                <th scope="col">Foto</th>
+              </tr>
+            </thead>
+            <tbody id="cuerpecito">     
+                               
+            </tbody>
+          </table>
 
-            //cuidar escritura
-    
+  </body>
+
+  <script>
+    const obtenerUsuario = async () => {
+      // asyinc = no va en cascada
+
+      const servicio = "https://reqres.in/api/users?page=2"; //hacer una peticion a este servicio para acccder a sus valores
+
+      // try catch tolerancia a errores , si llega a tronar algo se puede mostrar algo no tan feo
+      try {
+        const response = await fetch(servicio, {
+          //await espera la promesa (fetch)
+          method: "GET",
+          headers: { "Content-Type": "application/json" },
+        }); //es una equivalencia a una promesa sus parametros (a donde va, manera de pedir los datos,cabeceras tipo de datos)
+
+        // return response;
+        const json = await response.json();
+        // console.log(json.data);
+
+        mostUser(json); //aqui esta el arreglo y se lo mandamos a mostUser
+
+      } catch (error) {
+        console.log("error");
+      }
+
+      //cuidar escritura
+    };
+
+    obtenerUsuario();
+
+    // obtenerUsuario().then((response)=>{console.log(response)}) //manera de mostrar promesa 1
+
+    //funcion asincrona
+    //forma normal
+    // async function mostrarUsers(){ }
+    //forma flecha
+    // const mostrarUsers = async ()=>{   //recomendado pa usar manera de mostrar promesa 2
+    //     const  listUser = await obtenerUsuario() //await para esperar que tenga algo
+    //     console.log(listUser);
+    // }
+
+    // mostrarUsers();
+
+    function mostUser(json){
+        let info = "";
+
+        for(let r of json.data){
+            
+            info += `
+            <tr >
+                <td scoop="row ">${r.first_name}</td>
+                <td scoop="row ">${r.last_name}</td>
+                <td scoop="row ">${r.email}</td>
+                <td scoop="row ">
+                    <picture >
+                        <img alt="${r.first_name}" src="${r.avatar}">
+                    </picture> 
+                </td>
+              
+            </tr>
+            `
         }
 
-        obtenerUsuario();
-    
-        // obtenerUsuario().then((response)=>{console.log(response)}) //manera de mostrar promesa 1
+        document.querySelector("#cuerpecito").innerHTML = info
+    }
+  </script>
 
-        //funcion asincrona
-        //forma normal 
-        // async function mostrarUsers(){ }  
-         //forma flecha 
-        // const mostrarUsers = async ()=>{   //recomendado pa usar manera de mostrar promesa 2
-        //     const  listUser = await obtenerUsuario() //await para esperar que tenga algo
-        //     console.log(listUser);
-        // } 
-
-        // mostrarUsers();
-
-
-    
-    
-    </script>
-
-</body>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-    crossorigin="anonymous"></script>
-
+    crossorigin="anonymous"
+  ></script>
 </html>
