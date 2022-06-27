@@ -1,41 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Bootstrap demo</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+			crossorigin="anonymous"
+		/>
+	</head>
+	<body>
+		<div class="pos-f-t">
+			<div class="collapse" id="navbarToggleExternalContent">
+				<div class="bg-dark p-4">
+					<h5 class="text-white h4">Collapsed content</h5>
+					<span class="text-muted"
+						>Toggleable via the navbar brand.</span
+					>
+				</div>
+			</div>
+			<nav class="navbar navbar-dark bg-dark">
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarToggleExternalContent"
+					aria-controls="navbarToggleExternalContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			</nav>
+		</div>
+		<!-- .................................................................................................. -->
+		<div class="container mt-4">
+			<div class="row">
+				<div class="col">
+					<div
+						class="card text-white bg-dark mb-3"
+						style="width: 400px"
+					>
+						<div class="card-header">Practica 1</div>
+						<div class="card-body">
+							<h5 class="card-title">
+								Java Script mostrar un boton dinamico
+							</h5>
+							<p class="card-text">
+								utilizamos .innerHTML = 'Aqui ponemos una
+								etiqueta' se lo damos a un div Con punto Stylee
+								accedemos al estilo de la etiqueta
+							</p>
+							<a href="#" class="btn btn-primary">Probarlo</a>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div
+						class="card text-white bg-dark mb-3"
+						style="width: 400px"
+					>
+						<div class="card-header">Practica 2</div>
+						<div class="card-body">
+							<h5 class="card-title">Eventos y Metodos</h5>
+							<p class="card-text">
+								Utilizamos diversos eventos sobre los nodos del
+								DOM, desde un solo clic hasta estar dentro de un
+								boton o algo
+							</p>
+							<a href="Eventos.html" class="btn btn-primary"
+								>Probarlo</a
+							>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div
+						class="card text-white bg-dark mb-3"
+						style="width: 400px"
+					>
+						<div class="card-header">ECMASCRIPT</div>
+						<div class="card-body">
+							<h5 class="card-title">Primer ejercico</h5>
+							<p class="card-text">
+								Utilizacion de let , var . const y objeto además
+								de utilizar freeze para bloquear dato
+							</p>
+							<a href="Ecam.html" class="btn btn-primary"
+								>Probarlo</a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>practicas</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css
-    ">
-</head>
+		<!-- .................................................................................................. -->
 
-<body>
-    <div class="container-fluid">
-        <table class="table ">
-            <thead>
-                <tr>
-                    <th scope="col">Practica</th>
-                    <th scope="col">Links</th>
-                    <th scope="col">Dia</th>
+		<!-- .................................................................................................. -->
+		<div class="container mt-4">
+			<div class="row">
+				<div class="col">
+					<div
+						class="card text-white bg-dark mb-3"
+						style="width: 400px"
+					>
+						<div class="card-header">...</div>
+						<div class="card-body">
+							<h5 class="card-title">....</h5>
+							<p class="card-text">....</p>
+							<a href="#" class="btn btn-primary">Probarlo</a>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div
+						class="card text-white bg-dark mb-3"
+						style="width: 400px"
+					>
+						<div class="card-header">...</div>
+						<div class="card-body">
+							<h5 class="card-title">....s</h5>
+							<p class="card-text">...</p>
+							<a href="Eventos.html" class="btn btn-primary"
+								>Probarlo</a
+							>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div
+						class="card text-white bg-dark mb-3"
+						style="width: 400px"
+					>
+						<div class="card-header">....</div>
+						<div class="card-body">
+							<h5 class="card-title">....</h5>
+							<p class="card-text">.....</p>
+							<a href="Ecam.html" class="btn btn-primary"
+								>Probarlo</a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">2</th>
-                    <td><a href="practica2.html">Dar clic</a></td>
-                    <td>08/06/2022</td>
+		<!-- .................................................................................................. -->
 
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td><a href="practica3.html">Dar clic</a></td>
-                    <td>09/06/22</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-</body>
-
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+			crossorigin="anonymous"
+		></script>
+	</body>
 </html>
