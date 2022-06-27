@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Lambda</title>
+	</head>
+	<body>
+		<h3 class="numero"></h3>
+		<h3 class="numero"></h3>
+		<h3 class="numero"></h3>
+		<h3 class="numero"></h3>
+		<h3 class="numero"></h3>
+		<h3 class="numero"></h3>
+		<h3 class="numero"></h3>
+		<h3 class="numero"></h3>
+		<h3 class="numero"></h3>
+		<h3 class="numero"></h3>
+		<h3 class="numero"></h3>
+		<h3 class="numero"></h3>
+		<h3 class="numero"></h3>
+		<h3 class="numero"></h3>
+		<h3 class="numero"></h3>
+		<h3 class="numero"></h3>
+	</body>
+	<script>
+		let div = document.getElementsByClassName("numero");
+
+		function sumaNorm(a, b) {
+			return a + b;
+		}
+
+		div[0].innerHTML = sumaNorm(4, 19);
+
+		//flecha implicita
+		let sumaFelch = (a, b) => a + b;
+		div[1].innerHTML = sumaFelch(10, 10);
+
+		//flecha explicito
+		let sumaFelchIm = (a, b) => {
+			return a + b;
+		};
+		div[2].innerHTML = sumaFelchIm(5, 5);
+
+		//flecha con clg intyernio
+		let multi = (a, b) => (div[3].innerHTML = a * b);
+		multi(4, 5);
+		// ```````````````````````````````````````````````````````````````````````````````````````````` altgr
+		let user = (nombre = "Joel", apellido = "Herrera") => {
+			div[4].innerHTML =
+				"Hola mi nombre es " + nombre + " y mi apellido es " + apellido;
+		};
+
+		user();
+
+		////////////////////////TEMPLATES LITEARLS
+
+		let dia = "Martes";
+		let concat = ` Hoy es : ${dia}`;
+		div[5].innerHTML = concat;
+
+		let musica = (nombre, artista) =>
+			`Hola, estoy eschuchando ${nombre} de ${artista}`;
+		div[6].innerHTML = musica("Amor tumbado", "Nata");
+
+		div[7].innerHTML = "Primer linea <br> \nSegunda linea";
+
+		//////////////////////////SPREAD OPERATOR////////////
+		let miArreglo = [1, 2, 3];
+		let otroArray = [7, 8, 9, 10];
+
+		let sumararray = (a, b, c, d, e, f, g, h, i, j) =>
+			(div[8].innerHTML = a + b + c + d + e + f + g + h + i + j);
+
+		sumararray(...miArreglo); // for each con ... tres putnos y concatena ta,bien
+
+		let miarray2 = [...miArreglo, 4, 5, 6, ...otroArray];
+
+		console.log(...miarray2);
+		sumararray(...miarray2);
+
+		///////////DESTRUCTURACION//////////////
+
+		const cel = {
+			modelo: "Galaxy Note 10+",
+			marca: "Samsumg",
+			precio: 10000,
+			color: "Blanco",
+			memoria: {
+				ram: 12,
+				rom: 256
+			},
+			direccion:{
+				calle:"calle",
+				colonia:"colonia",
+				numero:{
+					interior:100,
+					exterior:2 
+				}
+			}
+		};
+
+		let modeloa = cel.modelo; // Obejeto.propiedad.propiedad
+		div[9].innerHTML = ` El celular ${modeloa} cuesta ${cel.precio}	 y tiene capacidad ${cel.memoria.ram} de ram y ${cel.memoria.rom} de almacenamiento`;
+
+		const { marca, color,memoria:{ram}, direccion:{numero} } = cel; //Sacar los datos
+		const {interior} = numero
+
+		console.log(cel.direccion.numero.exterior) // Parea no hacer esto tan largo se utiliza constructo
+
+		console.log(ram)
+		console.log(interior)
+
+
+		
+	</script>
+</html>.
+

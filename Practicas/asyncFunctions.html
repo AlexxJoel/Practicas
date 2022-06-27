@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="container-fluid p-5">
+       
+    </div>
+
+
+
+    <script>
+
+        // arreglo de objetos 
+        const canciones = [
+            {
+                id:1,
+                nombre: "Vete ya",
+                artista:"Gallo de oro",
+                duracion: 180
+            },
+            {
+                id:2,
+                nombre: "El sapiuto",
+                artista:"Belinda",
+                duracion: 150
+            },
+            {
+                id:3,
+                nombre: "Afuera esta lloviendo",
+                artista:" Julion Alvarez",
+                duracion: 190
+            }
+        ]
+
+        //funcion 
+
+        // const cosultCancion = ()=>{
+        //     return canciones;
+        // }
+
+        // const cosultCancion = ()=>{  //petiicon asincrona
+        //     setTimeout(()=>{ 
+        //         return canciones;
+        //     }, 2000)  // Primer parametro es la funcion que se va hacer  el segundo el tiempo
+        // }
+
+        // console.log(cosultCancion())
+
+        const cosultCancion = ()=>{  //petiicon asincrona
+            return new Promise((resolve, reject ) => {
+                setTimeout( ()=>{
+                    resolve(canciones)
+                    reject(()=>console.log(first))
+                },2000)
+            });
+        }
+
+        //para acceder a los valores de las promesas
+
+        // cosultCancion().then((canciones)=>console.log(canciones));
+
+        //Ver si tiene algo y ponerlo en bucle hasta que tenga algo
+
+         async  function misRolas() { // espera a que trenga el resultado
+            const listaCancion = await cosultCancion()
+            console.log(listaCancion)            
+        }
+
+        misRolas()
+
+        
+    </script>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+
+    <!-- Una funcion asincrona se define con una función async y la cual devuelve un objeto AsyncFunction 
+ Async / await simplifican el comportamuentio de uso sincrono de promesas. Las promiss
+
+
+-->
+
+</html>

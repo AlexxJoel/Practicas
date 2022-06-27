@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body onload="mensajCarga()" id="body">
+		<button onclick="mensajeClic()">Evento click</button>
+		<br /><br />
+
+		<div style="background-color: #fee" onmouseover="mensajSobre()">
+			<h1>Holiiiiiiiiiiiiiiiiii XD</h1>
+		</div>
+
+		<script>
+			function mensajeClic() {
+				alert("Holaaaa funcion");
+			}
+
+			function mensajSobre() {
+				alert("Hola  desde evento MouseOver ");
+			}
+
+			function mensajCarga() {
+				alert("Evento  de carga de la pagina ");
+				var na = document.getElementsByTagName("body");
+				na[0].style.backgroundColor = "#dd01dd";
+			}
+		</script>
+	</body>
+</html>

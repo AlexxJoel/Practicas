@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Ecma</title>
+	</head>
+	<body>
+		<button onclick="declaravar()">Declarar Var</button>
+		<button onclick="declaralet()">Declarar let</button>
+		<button onclick="declaraconst()">Declarar const</button>
+		<button onclick="declaraOBJ()">Declarar OBJ</button>
+	</body>
+	<script>
+		function declaravar() {
+			var materia = "WEB";
+
+			if (true) {
+				var materia = "BD";
+				console.log(materia);
+			}
+
+			console.log(materia);
+		}
+
+		function declaralet() {
+			let materia = "WEB";
+
+			if (true) {
+				let materia = "BD";
+				console.log(materia);
+			}
+
+			console.log(materia);
+		}
+
+		function declaraconst() {
+			const materia = "WEB";
+			if (true) {
+				const materia = "BD";
+
+				console.log(materia);
+			}
+
+			console.log(materia);
+		}
+
+		function declaraOBJ() {
+			const persona = {
+				nombre: "Joel",
+				apellido: "Herrera",
+				edad: 18,
+				colorFav: "Rojo",
+			};
+
+			console.log(persona);
+			// console.log(persona.apellido);
+
+			//Object.freeze(persona); //No permitir que casmbie las cosaass
+
+			persona.nombre = " Paco ";
+			console.log(persona);
+
+			Object.defineProperty(persona, "nombre", {
+				configurable: false,
+				writable: false,
+			}); //Evitar que la configuren y la editen
+
+			persona.nombre = " Jones ";
+			console.log(persona);
+		}
+	</script>
+</html>

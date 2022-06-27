@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="container-fluid p-5">
+        <div class="row">
+            
+            <div class="col"><button type="button" class="btn btn-outline-primary" id="id-evento"> EVENT LISTENER </button></div>
+            <div class="col"><button type="button" class="btn btn-outline-primary" id="id-evento1"> EVENT LISTENER </button></div>
+      
+        </div>
+    </div>
+
+    <script>
+        let element = document.getElementById("id-evento"); // almacernamos 
+
+        element.addEventListener("dblclick", () => alert("Hola desde Evcento listener")); //Forma de asiganar a un evento de un elemento a una etiqueta}
+
+        let element1 = document.querySelector("#id-evento1"); // forma de encontrar elemento 
+        element1.addEventListener("click", () => alert("Hola desde Evcento listener")); //Forma de asiganar a un evento de un elemento a una etiqueta}
+
+        //query selecto toma el ultimo de la lista , si quieres todos es queryall
+    </script>
+
+</body>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+
+</html>
