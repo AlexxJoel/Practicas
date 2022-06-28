@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="container-fluid p-5">
+      <div class="row">
+        <div class="col-4">
+          <div class="card" style="width: 400px; height: 300px">
+            <div class="card-body">ñaaaaaa</div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card" style="width: 400px; height: 300px">
+            <div class="card-body">ñaaaaaa</div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card" style="width: 400px; height: 300px">
+            <div class="card-body">ñaaaaaa</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-3">
+        <div class="col-4">
+          <div class="card" style="width: 400px; height: 300px">
+            <div class="card-body">ñaaaaaa</div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card" style="width: 400px; height: 300px">
+            <div class="card-body">ñaaaaaa</div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card" style="width: 400px; height: 300px">
+            <div class="card-body">ñaaaaaa</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+         let element1 = document.getElementsByClassName("card"); // forma de encontrar elemento 
+         
+
+        element1[0].addEventListener("mouseover", () => {element1[0].style.background = 'green'}); 
+        element1[1].addEventListener("mouseover", () => {element1[1].style.background = 'green'}); 
+        element1[2].addEventListener("mouseover", () => {element1[2].style.background = 'green'}); 
+        element1[3].addEventListener("mouseover", () => {element1[3].style.background = 'green'}); 
+        element1[4].addEventListener("mouseover", () => {element1[4].style.background = 'green'}); 
+        element1[5].addEventListener("mouseover", () => {element1[5].style.background = 'green'}); 
+
+        element1[0].addEventListener("mouseout", () => {element1[0].style.background = 'white'}); 
+        element1[1].addEventListener("mouseout", () => {element1[1].style.background = 'white'}); 
+        element1[2].addEventListener("mouseout", () => {element1[2].style.background = 'white'}); 
+        element1[3].addEventListener("mouseout", () => {element1[3].style.background = 'white'}); 
+        element1[4].addEventListener("mouseout", () => {element1[4].style.background = 'white'}); 
+        element1[5].addEventListener("mouseout", () => {element1[5].style.background = 'white'}); 
+
+    </script>
+  </body>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"
+  ></script>
+</html>
