@@ -16,6 +16,9 @@
       <div class="col-4">
         <div class="card">
           <div id="imagen" class="col">
+
+            <img class="card-img-top" src="../photos/minion1.jpg" alt="Card image cap" height="400px" id="imagee">
+
           </div>
           <div class="card-body">
             <h5 class="card-title"></h5>MINIONS</h5>
@@ -26,7 +29,8 @@
                 <div class="row  ">
                   <div class="ml-lg-0 col-lg-12">
                     <div class="form-group row d-flex justify-content-between ">
-                      <input type="button" name="previous"      class="previous btn btn-default col-5 col-md-5 btn-outline-info" value="Previo">
+                      <input type="button" name="previous"
+                        class="previous btn btn-default col-5 col-md-5 btn-outline-info" value="Previo">
                       <input type="button" name="next" class="btn btn-outline-info col-5 col-md-5" value="Siguiente">
 
                     </div>
@@ -46,8 +50,10 @@
 
     var botonAntes = document.getElementsByName('previous'); //antes 
     var botondespues = document.getElementsByName('next'); //antes 
-    var divimg = document.getElementById("imagen")
-    var imagenes = 0
+    var image = document.getElementById("imagee")
+    var imagenes = 1
+
+
 
     botonAntes[0].onclick = function () {
 
@@ -55,10 +61,10 @@
 
       if (imagenes > 5) {
         imagenes = 1;
+
       }
-
-      divimg.innerHTML = `"<img class="card-img-top" src="../photos/minion${imagenes}.jpg" alt="Card image cap" height="400px">"`
-
+      image.src = `../photos/minion${imagenes}.jpg`
+        
     }
 
 
@@ -66,16 +72,15 @@
 
       imagenes -= 1;
 
-      if (imagenes < 1) {
+      if (imagenes  == 0) {
         imagenes = 5;
+
       }
-
-      divimg.innerHTML = `"<img class="card-img-top" src="../photos/minion${imagenes}.jpg" alt="Card image cap" height="400px">"`
-
+      image.src = `../photos/minion${imagenes}.jpg`;
     }
+
+
   </script>
 </body>
 
 </html>
-
-
