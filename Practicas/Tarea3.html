@@ -32,7 +32,6 @@
                       <input type="button" name="previous"
                         class="previous btn btn-default col-5 col-md-5 btn-outline-info" value="Previo">
                       <input type="button" name="next" class="btn btn-outline-info col-5 col-md-5" value="Siguiente">
-
                     </div>
                   </div>
                 </div>
@@ -51,34 +50,27 @@
     var botonAntes = document.getElementsByName('previous'); //antes 
     var botondespues = document.getElementsByName('next'); //antes 
     var image = document.getElementById("imagee")
-    var imagenes = 1
 
 
+    var foticos = ["../photos/minion1.jpg", "../photos/minion2.jpg", "../photos/minion3.jpg", "../photos/minion4.jpg", "../photos/minion5.jpg"]
+
+    var imagenes = 0;
 
     botonAntes[0].onclick = function () {
-
-      imagenes += 1;
-
-      if (imagenes > 5) {
-        imagenes = 1;
-
+      image.src = foticos[imagenes];
+      imagenes++;
+      if (imagenes >4 ) {
+        imagenes = 0
       }
-      image.src = `../photos/minion${imagenes}.jpg`
-        
     }
-
 
     botondespues[0].onclick = function () {
-
-      imagenes -= 1;
-
-      if (imagenes  == 0) {
-        imagenes = 5;
-
+      image.src = foticos[imagenes];
+      imagenes--;
+      if (imagenes < 0) {
+        imagenes = 4
       }
-      image.src = `../photos/minion${imagenes}.jpg`;
     }
-
 
   </script>
 </body>
