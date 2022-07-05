@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Imagenes</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+</head>
+
+<body>
+  <div class="container-fluid p-5">
+    <div class="row">
+      <div class="col-4"></div>
+      <div class="col-4">
+        <div class="card">
+          <div id="imagen" class="col">
+
+            <img class="card-img-top" src="../photos/minion1.jpg" alt="Card image cap" height="400px" id="imagee">
+
+          </div>
+          <div class="card-body">
+            <h5 class="card-title"></h5>MINIONS</h5>
+            <p class="card-text">TURIPELLA CON LA PAPAYA</p>
+            <div class="row">
+              <div class="container ">
+                <!-- Botones -->
+                <div class="row  ">
+                  <div class="ml-lg-0 col-lg-12">
+                    <div class="form-group row d-flex justify-content-between ">
+                      <input type="button" name="previous"
+                        class="previous btn btn-default col-5 col-md-5 btn-outline-info" value="Previo">
+                      <input type="button" name="next" class="btn btn-outline-info col-5 col-md-5" value="Siguiente">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Fin Botones -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4"></div>
+    </div>
+  </div>
+  <script>
+
+
+    var botonAntes = document.getElementsByName('previous'); //antes 
+    var botondespues = document.getElementsByName('next'); //antes 
+    var image = document.getElementById("imagee")
+
+
+    var foticos = ["../photos/minion1.jpg", "../photos/minion2.jpg", "../photos/minion3.jpg", "../photos/minion4.jpg", "../photos/minion5.jpg"]
+
+    var imagenes = 0;
+
+    botonAntes[0].onclick = function () {
+      image.src = foticos[imagenes];
+      imagenes++;
+      if (imagenes >4 ) {
+        imagenes = 0
+      }
+    }
+
+    botondespues[0].onclick = function () {
+      image.src = foticos[imagenes];
+      imagenes--;
+      if (imagenes < 0) {
+        imagenes = 4
+      }
+    }
+
+  </script>
+</body>
+
+</html>
