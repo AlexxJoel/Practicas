@@ -1,0 +1,60 @@
+fieldset {
+    background-color: #f0ffff;
+    padding: 20px 30px;
+    width: 60%;
+    margin: auto;
+    text-align: left;
+  }
+  legend {
+    font-weight: bolder;
+    font-size: 30px;
+  }
+  td p, td a{
+    font-weight: bolder;
+    box-sizing: border-box;
+    margin: 7px 0;
+    text-decoration: underline;
+    color: black;
+  }
+  label {
+    margin: 0 0 0 80px;
+  }
+  img {
+    border-radius: 60%;
+  }
+  #secret {
+    text-align: center;
+  }
+  td > button {
+    margin: 0 0 0 180px;
+    background-color: #39b9d6; /* Green */
+    border: 0.5px solid black;
+    border-radius: 4px;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  #mayor {
+    width: 65%;
+    margin: auto;
+  }
+  .der {
+    float: right;
+    width: 320px;
+    height: 140px;
+  }
+  .izq {
+    float: left;
+    width: 320px;
+  }
+  .der label {
+    margin: 0;
+    padding: 0;
+  }
+  .izq label {
+    margin: 0;
+    padding: 0;
+  }

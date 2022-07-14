@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;    
+    font-family: 'Courier New', Courier, monospace;
+}
+span{
+    color: blue;
+    font: bold;
+}
+h3{
+    margin: 10px 0;
+}
+#principal{
+    background-color: #aaf;
+    padding: 7px;
+    height: 96px;
+}
+#normal{
+    margin: auto;
+    width: 700px;
+    padding: 10px;
+    outline: 1px solid #000;
+}
+img{
+    float: left;
+    margin: 0 30px;
+    border-radius: 50%;
+}
+#nombres{
+    float: right;
+    margin: 10px 40px 0 0;
+}
+.upsi{
+    text-align: center;
+}
+
+/* -----------------------------------------------header---------------------------- */
+#gris{
+    margin: 4px 0;
+    background-color: #ddd;
+    padding: 28px;
+    height: 710px;
+}
+#izq{
+
+    text-align: left;
+    width: 170px;
+    float: left;
+
+}
+#der{
+    text-align: left;
+    width: 430px;
+    float: right;
+}
+ol{
+    margin-left: 30px;
+}
+ul{
+    margin-left: 12px;
+}
+h4{
+    margin: 30px 0;
+}
+button{
+    margin:0;
+	position: relative;
+	display: block;
+	padding: 1px 20px;
+	border-radius: 6px;
+	text-align: center;
+	font-weight: bold;
+	height: 50px;
+	margin-bottom: 60px;
+	overflow: hidden;
+	cursor: pointer;
+	text-decoration: none;
+
+}
+#na{
+    margin: 1px 0;
+}
