@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro Productos</title>
+    <link
+      href="css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body style="background-color: rgba(230, 230, 230, .9);">
+    <header>
+      <!-- encabezado  -->
+      <nav class="navbar  navbar-expand-lg  navbar-dark bg-success">
+        <div class="container">
+
+          <a class="navbar-brand" href="#">
+            <img src="https://sisava2.utez.edu.mx:8443/SISAVA/img/utez/logo2016-contorno.png" alt="Logo" width="90" height="40" >
+          </a>
+       
+          <!-- buscador -->
+          <button class="navbar-toggler px-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"  aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="29" fill="currentColor" class="bi bi-search text-white" viewBox="0 0 16 16">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+            </svg>
+          </button>
+
+
+          <!-- Iteams -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"  aria-controls="navbarTogglerDemo01" aria-expanded="true" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+
+        <div class="collapse navbar-collapse " id="navbarTogglerDemo01">       
+          <div class="navbar-nav  fw-bold">
+            <a class="mx-3 nav-link active" aria-current="page" href="#">Banners</a>
+            <a class="mx-3 nav-link" href="#">Inventario</a>
+            <a class="mx-3 nav-link" href="#">Administradores</a>
+            <a class="mx-3 nav-link" href="#">Cerrar sesíon</a>
+            <a class="mx-3 nav-link" href="#">Cambiar contraseña</a>            
+          </div> 
+        </div>
+
+         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">  
+          <div class="navbar-nav  fw-bold">
+            <form class="d-flex input-group">
+              <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-primary" type="submit">Search</button>
+            </form>     
+          </div> 
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="5900">
+        <img src="https://http2.mlstatic.com/D_NQ_770010-MLA50637529550_072022-OO.webp"  class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="5900">
+        <img src="https://http2.mlstatic.com/D_NQ_904253-MLA50715286536_072022-OO.webp"  class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="5900">
+        <img src="https://http2.mlstatic.com/D_NQ_659684-MLA50715371613_072022-OO.webp"  class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- fin carrusel -->
+
+  <!--=====================================
+  =            Boton de telefono         =
+  ======================================-->  
+  
+  <div class="container mb-1 ">
+  <div class="d-flex justify-content-sm-center mx-5 m-sm-0 mt-3 d-block d-dm-block d-lg-none">
+  <button class=" btn p-3 px-5 btn-primary text-white m-sm-3 px-4" type="button" data-bs-toggle="collapse" data-bs-target="#categoriasProducts"  >
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tags" viewBox="0 0 16 16">
+      <path d="M3 2v4.586l7 7L14.586 9l-7-7H3zM2 2a1 1 0 0 1 1-1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 2 6.586V2z"/>
+      <path d="M5.5 5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm0 1a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM1 7.086a1 1 0 0 0 .293.707L8.75 15.25l-.043.043a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 0 7.586V3a1 1 0 0 1 1-1v5.086z"/>
+    </svg>
+    <i>Categorias</i>
+  </button>
+   </div>
+</div>
+
+  <!--====  End of Boton de telefono===--> 
+
+
+  <!-- inicio categoria cuadros  -->
+  <div class="container ">
+    <div class="d-lg-block collapse " id="categoriasProducts">      
+      <div class="d-flex flex-wrap justify-content-md-between justify-content-center ">
+        <a href="#" class="btn my-1 mx-1 mx-md-0 p-3 px-5 btn-primary text-decoration-none text-white m-sm-3">Categoria</a>            
+        <a href="#" class="btn my-1 mx-1 mx-md-0 p-3 px-5 btn-primary text-decoration-none text-white m-sm-3">Categoria</a>            
+        <a href="#" class="btn my-1 mx-1 mx-md-0 p-3 px-5 btn-primary text-decoration-none text-white m-sm-3">Categoria</a>            
+        <a href="#" class="btn my-1 mx-1 mx-md-0 p-3 px-5 btn-primary text-decoration-none text-white m-sm-3">Categoria</a>            
+        <a href="#" class="btn my-1 mx-1 mx-md-0 p-3 px-5 btn-primary text-decoration-none text-white m-sm-3">Categoria</a>
+      </div>          
+    </div>    
+  </div>
+
+
+
+<!-- productos -->  
+
+    <main>
+      <div class="container mt-3">
+        <div class="row mb-4">
+          <div class="col-12 col-lg-3 col-md-5  my-1 px-sm-3 mx-sm-3 p-lg-0 m-lg-0 ">
+            <a href="#" class="card position-relative text-decoration-none " style="max-width: 277.84px;">
+                <!-- Iteam de oferta -->
+                <span class="position-absolute  badge rounded-1  m-2 px-3 bg-success">Oferta</span>
+                <!-- imagen del producto -->
+                <img width="284" height="284" src="https://http2.mlstatic.com/D_NQ_NP_671900-MLM49499224259_032022-W.webp" class="shadow-sm card-img p-4 ui-search-result-image__element" alt="Playera Polo Marca Garanty Mod. 5700">
+                <!-- precio -->
+              <div class="card-title ">
+                <p class="mb-0 text-success fw-bold p-3 pb-1">$300 pesos</p>
+                <hr>
+              </div>
+              <!-- descripcion corta -->
+              <div class="card-text text-dark">
+                <p class="mb-0 p-3 pt-0">
+                  Whatafit Camiseta Faja Playera Reductora Moldeadora Hombre
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-lg-3 col-md-5  my-1 px-sm-3 mx-sm-3 p-lg-0 m-lg-0 ">
+            <div class="card position-relative " style="max-width: 277.84px;">
+                <!-- Iteam de oferta -->
+                <span class="position-absolute  badge rounded-1  m-2 px-3 bg-success">Oferta</span>
+                <!-- imagen del producto -->
+                <img width="284" height="284" src="https://http2.mlstatic.com/D_NQ_NP_671900-MLM49499224259_032022-W.webp" class="shadow-sm card-img p-4 ui-search-result-image__element" alt="Playera Polo Marca Garanty Mod. 5700">
+                <!-- precio -->
+              <div class="card-title ">
+                <p class="mb-0 text-success fw-bold p-3 pb-1">$300 pesos</p>
+                <hr>
+              </div>
+              <!-- descripcion corta -->
+              <div class="card-text">
+                <p class="mb-0 p-3 pt-0">
+                  Whatafit Camiseta Faja Playera Reductora Moldeadora Hombre
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-3 col-md-5  my-1 px-sm-3 mx-sm-3 p-lg-0 m-lg-0 ">
+            <div class="card position-relative " style="max-width: 277.84px;">
+                <!-- Iteam de oferta -->
+                <span class="position-absolute  badge rounded-1  m-2 px-3 bg-success">Oferta</span>
+                <!-- imagen del producto -->
+                <img width="284" height="284" src="https://http2.mlstatic.com/D_NQ_NP_671900-MLM49499224259_032022-W.webp" class="shadow-sm card-img p-4 ui-search-result-image__element" alt="Playera Polo Marca Garanty Mod. 5700">
+                <!-- precio -->
+              <div class="card-title ">
+                <p class="mb-0 text-success fw-bold p-3 pb-1">$300 pesos</p>
+                <hr>
+              </div>
+              <!-- descripcion corta -->
+              <div class="card-text">
+                <p class="mb-0 p-3 pt-0">
+                  Whatafit Camiseta Faja Playera Reductora Moldeadora Hombre
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-3 col-md-5  my-1 px-sm-3 mx-sm-3 p-lg-0 m-lg-0 ">
+            <div class="card position-relative " style="max-width: 277.84px;">
+                <!-- Iteam de oferta -->
+                <span class="position-absolute  badge rounded-1  m-2 px-3 bg-success">Oferta</span>
+                <!-- imagen del producto -->
+                <img width="284" height="284" src="https://http2.mlstatic.com/D_NQ_NP_671900-MLM49499224259_032022-W.webp" class="shadow-sm card-img p-4 ui-search-result-image__element" alt="Playera Polo Marca Garanty Mod. 5700">
+                <!-- precio -->
+              <div class="card-title ">
+                <p class="mb-0 text-success fw-bold p-3 pb-1">$300 pesos</p>
+                <hr>
+              </div>
+              <!-- descripcion corta -->
+              <div class="card-text">
+                <p class="mb-0 p-3 pt-0">
+                  Whatafit Camiseta Faja Playera Reductora Moldeadora Hombre
+                </p>
+              </div>
+            </div>
+          </div>
+     
+        </div>
+        <div class="row mb-4">
+          <div class="col-12 col-lg-3 col-md-5  my-1 px-sm-3 mx-sm-3 p-lg-0 m-lg-0 ">
+            <div class="card position-relative " style="max-width: 277.84px;">
+                <!-- Iteam de oferta -->
+
+                <!-- imagen del producto -->
+                <img width="284" height="284" src="https://http2.mlstatic.com/D_NQ_NP_671900-MLM49499224259_032022-W.webp" class="shadow-sm card-img p-4 ui-search-result-image__element" alt="Playera Polo Marca Garanty Mod. 5700">
+                <!-- precio -->
+              <div class="card-title ">
+                <p class="mb-0 text-success fw-bold p-3 pb-1">$300 pesos</p>
+                <hr>
+              </div>
+              <!-- descripcion corta -->
+              <div class="card-text">
+                <p class="mb-0 p-3 pt-0">
+                  Whatafit Camiseta Faja Playera Reductora Moldeadora Hombre
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-3 col-md-5  my-1 px-sm-3 mx-sm-3 p-lg-0 m-lg-0 ">
+            <div class="card position-relative " style="max-width: 277.84px;">
+                <!-- Iteam de oferta -->
+
+                <!-- imagen del producto -->
+                <img width="284" height="284" src="https://http2.mlstatic.com/D_NQ_NP_671900-MLM49499224259_032022-W.webp" class="shadow-sm card-img p-4 ui-search-result-image__element" alt="Playera Polo Marca Garanty Mod. 5700">
+                <!-- precio -->
+              <div class="card-title ">
+                <p class="mb-0 text-success fw-bold p-3 pb-1">$300 pesos</p>
+                <hr>
+              </div>
+              <!-- descripcion corta -->
+              <div class="card-text">
+                <p class="mb-0 p-3 pt-0">
+                  Whatafit Camiseta Faja Playera Reductora Moldeadora Hombre
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-3 col-md-5  my-1 px-sm-3 mx-sm-3 p-lg-0 m-lg-0 ">
+            <div class="card position-relative " style="max-width: 277.84px;">
+                <!-- Iteam de oferta -->
+
+                <!-- imagen del producto -->
+                <img width="284" height="284" src="https://http2.mlstatic.com/D_NQ_NP_671900-MLM49499224259_032022-W.webp" class="shadow-sm card-img p-4 ui-search-result-image__element" alt="Playera Polo Marca Garanty Mod. 5700">
+                <!-- precio -->
+              <div class="card-title ">
+                <p class="mb-0 text-success fw-bold p-3 pb-1">$300 pesos</p>
+                <hr>
+              </div>
+              <!-- descripcion corta -->
+              <div class="card-text">
+                <p class="mb-0 p-3 pt-0">
+                  Whatafit Camiseta Faja Playera Reductora Moldeadora Hombre
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-3 col-md-5  my-1 px-sm-3 mx-sm-3 p-lg-0 m-lg-0 ">
+            <div class="card position-relative " style="max-width: 277.84px;">
+                <!-- Iteam de oferta -->
+
+                <!-- imagen del producto -->
+                <img width="284" height="284" src="https://http2.mlstatic.com/D_NQ_NP_671900-MLM49499224259_032022-W.webp" class="shadow-sm card-img p-4 ui-search-result-image__element" alt="Playera Polo Marca Garanty Mod. 5700">
+                <!-- precio -->
+              <div class="card-title ">
+                <p class="mb-0 text-success fw-bold p-3 pb-1">$300 pesos</p>
+                <hr>
+              </div>
+              <!-- descripcion corta -->
+              <div class="card-text">
+                <p class="mb-0 p-3 pt-0">
+                  Whatafit Camiseta Faja Playera Reductora Moldeadora Hombre
+                </p>
+              </div>
+            </div>
+          </div>
+     
+        </div>
+      </div>
+
+    </main>
+    <!-- el main lleva articles -->
+    <aside>
+      <!-- para poner datos a un lado del articulo -->
+    </aside>
+
+    <!-- tablas para recaudar los mismo datos por columnas  -->
+    <div class="container my-4">
+      <footer class="blockquote-footer ">
+        Proyecto Integradora , Universidad Tecnologica Emiliano Zapata
+        <!-- es el pie d pagina -->
+      </footer>
+    </div>
+    <script
+      src="js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+
