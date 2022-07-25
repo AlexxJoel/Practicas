@@ -81,12 +81,41 @@
 	<script>
 
 		var dondeSePoneContador = document.getElementsByTagName('p');
+		//Traemos etiqutas p , esto viene en manera de array
 		// console.log(dondeSePoneContador);
 		var botones = document.getElementsByTagName('input');
+		//Traemos etiqutas input , esto viene en manera de array
+
+		// Se posicionan de acuerdo al elemeno de arriba hacia abajo en html
+
 		// console.log(botones)
 
-		var contadorClick=0	
-		botones[0].addEventListener("click",()=>{ contadorClick++; 	dondeSePoneContador[0].innerHTML = contadorClick; })
+		var contadorClick=0	 //Contador para ver las veces que se realiza el evento 
+		botones[0].addEventListener("click",()=>{ contadorClick++; 	
+		dondeSePoneContador[0].innerHTML = contadorClick; })
+		// Al primer boton le agregamos un evento, cuando ocurra una funcion flecha se ejecuta, dando como resultado aumentando de uno en uno el contador y pintandolo en el p que se le indica
+
+		//( Puede ser funcion flecha o funcion normal con nombre)
+
+		var contadorDbClick=0	
+		botones[1].addEventListener("dblclick",()=>{ contadorDbClick++; 	
+		dondeSePoneContador[1].innerHTML = contadorDbClick; })
+
+		var contadorMouseDown=0	
+		botones[2].addEventListener("mousedown",()=>{ contadorMouseDown++; 	
+		dondeSePoneContador[2].innerHTML = contadorMouseDown; })
+
+		var contadorMouseOut=0	
+		botones[3].addEventListener("mouseout",()=>{ contadorMouseOut++; 	
+		dondeSePoneContador[3].innerHTML = contadorMouseOut; })
+
+		var contadorMouseOver=0	
+		botones[4].addEventListener("mouseover",()=>{ contadorMouseOver++; 	
+		dondeSePoneContador[4].innerHTML = contadorMouseOver; })
+
+		var contadorMouseMove=0	
+		botones[5].addEventListener("mousemove",()=>{ contadorMouseMove++; 	
+		dondeSePoneContador[5].innerHTML = contadorMouseMove; })
 
 	</script>
 
