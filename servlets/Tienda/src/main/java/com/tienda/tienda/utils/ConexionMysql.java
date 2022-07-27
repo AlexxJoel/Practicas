@@ -37,4 +37,12 @@ public class ConexionMysql {
         }
     }
 
+    /*public void closeConnection (Connection conn,PreparedStatement pstm,ResultSet rs) throws SQLException {
+        if (conn != null || pstm !=null || rs!= null) {
+            conn.close();
+            pstm.close();
+            rs.close();
+        }
+    }*/
+
 }

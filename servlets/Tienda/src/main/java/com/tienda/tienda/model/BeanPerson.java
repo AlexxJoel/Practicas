@@ -13,6 +13,15 @@ public class BeanPerson {
     public BeanPerson() {
     }
 
+    public BeanPerson(int id, String name, String lastName, String email, int age, String phone) {
+        this.id = id;
+        this.name = name;
+        this.lastName = lastName;
+        this.email = email;
+        this.age = age;
+        this.phone = phone;
+    }
+
     public int getId() {
         return id;
     }
@@ -54,10 +63,12 @@ public class BeanPerson {
     }
 
     public String getPhone() {
-        return phone;
+        return this.phone;
     }
 
     public void setPhone(String phone) {
         this.phone = phone;
     }
+
+
 }

@@ -1,4 +1,8 @@
-<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" language="java" %>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,12 +15,15 @@
 
 <div class="container">
     <h1 class="text-center my-2">INDEX PERSONA</h1>
+    <c:if test="${param['result']}">
+        <p>${param['message']}</p>
+    </c:if>
     <div class="card">
         <div class="card-header">
             <div class="row">
                 <div class="col-6">PERSONAS</div>
                 <div class="col-6 text-end">
-                    <a href="#" class="btn btn-success btn-sm">
+                    <a href="createPerson" class="btn btn-success btn-sm">
                         Registrar Persona
                     </a>
                 </div>
@@ -24,7 +31,7 @@
         </div>
         <!-----------------------------------TABLA INCIO--------------------------------------------- -->
         <div class="card-body">
-            <table class="table">
+            <table class="table table-sm table-hover">
 
 
 
@@ -40,25 +47,22 @@
                 </tr>
                 </thead>
 
+                    <tbody>
+                    <c:forEach  items="${lista}" var="li" varStatus="status">
+                    <tr>
+                        <td><c:out value="${status.count}"></c:out></td>
+                        <td>${li.name}</td>
+                        <td>${li.lastName}</td>
+                        <td>${li.age}</td>
+                        <td>${li.email}</td>
+                        <td>${li.phone}</td>
+                        <td>
+                            <a href="getPerson?id=${li.id}" class="btn btn-warning btn-small">EDITAR</a>
+                            <a href="#${li.id}" class="btn btn-danger btn-small">Eliminar</a>
+                        </td>
+                    </tr>
+                    </c:forEach>
 
-                <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td colspan="2">Larry the Bird</td>
-                    <td>@twitter</td>
-                </tr>
                 </tbody>
             </table>
         </div>
@@ -67,7 +71,7 @@
     </div>
 
 </div>
-
+<%@include file="/template/footer.jsp"%>
 </body>
 </html>
 
