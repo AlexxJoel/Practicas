@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Img:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>Img</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="Img-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="Img:war exploded" />
+    </root>
+  </artifact>
+</component>

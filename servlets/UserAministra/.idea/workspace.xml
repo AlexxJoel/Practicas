@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ArtifactsWorkspaceSettings">
-    <artifacts-to-build>
-      <artifact name="CreateProduct:war exploded" />
-    </artifacts-to-build>
-  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9639ac7b-cbb7-46fe-96ea-cb55ffa188e2" name="Changes" comment="">
+    <list default="true" id="8c3e765e-bad1-4a08-874b-2fce7cda597d" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/../UserAdmin/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../UserAdmin/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../UserAdmin/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
@@ -19,24 +14,9 @@
       <change afterPath="$PROJECT_DIR$/../UserAdmin/src/main/java/mx/edu/utez/proyectotiendautez/useradmin/HelloServlet.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../UserAdmin/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../UserAdmin/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../UserAministra/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../UserAministra/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../UserAministra/.idea/artifacts/UserAministra_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../UserAministra/.idea/artifacts/UserAministra_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../UserAministra/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../UserAministra/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../UserAministra/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../UserAministra/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../UserAministra/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../UserAministra/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../UserAministra/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../UserAministra/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../UserAministra/src/main/java/mx/edu/utez/proyectotiendautez/useraministra/HelloServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../UserAministra/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../UserAministra/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/c/product/createproduct/controler/ServletProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c/product/createproduct/controler/ServletProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CreateProduct/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CreateProduct/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CreateProduct/src/main/java/c/product/createproduct/controler/ServletProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CreateProduct/src/main/java/c/product/createproduct/controler/ServletProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CreateProduct/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../CreateProduct/src/main/webapp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Crud/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Crud/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Tienda/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Tienda/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -48,67 +28,39 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="LogFilters">
-    <option name="FILTER_ERRORS" value="false" />
-    <option name="FILTER_WARNINGS" value="false" />
-    <option name="FILTER_INFO" value="true" />
-    <option name="FILTER_DEBUG" value="true" />
-    <option name="CUSTOM_FILTER" />
-  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2CVwqaqyXGZIR66xiAm3Xp7F762" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="2Cgj3hy3YzoatrvMEg52Pwt4GJX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/joelh/Documents/Git/TiendaUtez/Servlets/UserAministra",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
-  <component name="RecentsManager">
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="c.product.createproduct.utils" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.63">
-    <configuration name="Conexion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="c.product.createproduct.utils.Conexion" />
-      <module name="CreateProduct" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="c.product.createproduct.utils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+}]]></component>
+  <component name="RunManager">
     <configuration name="Tomcat 9.0.63" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.63" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
       <deployment>
-        <artifact name="CreateProduct:war exploded">
+        <artifact name="UserAministra:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/CreateProduct_war_exploded" />
+            <option name="CONTEXT_PATH" value="/UserAministra_war_exploded" />
           </settings>
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="e1846d44-3567-4822-82d1-f7f7f1cda620" />
+        <option name="BASE_DIRECTORY_NAME" value="f420c198-8b49-46e5-b2bb-81d9303c43e7" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -116,7 +68,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="53512" />
+        <option name="DEBUG_PORT" value="52153" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -181,47 +133,101 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="CreateProduct:war exploded" />
+          <artifact name="UserAministra:war exploded" />
         </option>
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Application.Conexion" />
-      <item itemvalue="Tomcat Server.Tomcat 9.0.63" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Conexion" />
-      </list>
-    </recent_temporary>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="f420c198-8b49-46e5-b2bb-81d9303c43e7" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="52153" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9639ac7b-cbb7-46fe-96ea-cb55ffa188e2" name="Changes" comment="" />
-      <created>1658901255028</created>
+      <changelist id="8c3e765e-bad1-4a08-874b-2fce7cda597d" name="Changes" comment="" />
+      <created>1659230927491</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1658901255028</updated>
-      <workItem from="1658901256475" duration="1946000" />
-      <workItem from="1659061920344" duration="11023000" />
-      <workItem from="1659225997765" duration="965000" />
-      <workItem from="1659230132585" duration="1001000" />
+      <updated>1659230927491</updated>
+      <workItem from="1659230929344" duration="821000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
 </project>

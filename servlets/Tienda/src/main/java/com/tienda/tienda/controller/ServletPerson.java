@@ -106,7 +106,7 @@ public class ServletPerson extends HttpServlet {
 
                 ResultAction result = serv.upadatePerson(bean);
 
-                urlRedirect = "/getPersons?result="+result.isResult()+"&message="+result.getMessage()+"&status="+result.getStatus();
+                        urlRedirect = "/getPersons?result="+result.isResult()+"&message="+result.getMessage()+"&status="+result.getStatus();
             }
 
         response.sendRedirect(request.getContextPath()+urlRedirect);

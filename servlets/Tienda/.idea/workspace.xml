@@ -10,15 +10,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c24baab5-29df-486a-a1d7-b6802f7ecc48" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../UserAdmin/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../UserAdmin/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../UserAdmin/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../UserAdmin/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../UserAdmin/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../UserAdmin/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../UserAdmin/src/main/java/mx/edu/utez/proyectotiendautez/useradmin/HelloServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../UserAdmin/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../UserAdmin/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CreateProduct/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CreateProduct/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CreateProduct/src/main/java/c/product/createproduct/controler/ServletProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CreateProduct/src/main/java/c/product/createproduct/controler/ServletProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CreateProduct/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../CreateProduct/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Crud/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Crud/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Login/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Login/src/main/webapp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tienda/tienda/controller/ServletPerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tienda/tienda/controller/ServletPerson.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tienda/tienda/model/BeanPerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tienda/tienda/model/BeanPerson.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tienda/tienda/model/DaoPerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tienda/tienda/model/DaoPerson.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tienda/tienda/utils/ConexionMysql.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tienda/tienda/utils/ConexionMysql.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/person/indexPerson.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/person/indexPerson.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/template/footer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/head.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/template/head.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/navbar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/template/navbar.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -371,6 +378,12 @@
       <workItem from="1658509454099" duration="8807000" />
       <workItem from="1658800787666" duration="1227000" />
       <workItem from="1658901564402" duration="270000" />
+      <workItem from="1659073073836" duration="3031000" />
+      <workItem from="1659234242362" duration="6663000" />
+      <workItem from="1659309798170" duration="66000" />
+      <workItem from="1659323772634" duration="3088000" />
+      <workItem from="1659448767019" duration="2616000" />
+      <workItem from="1659578821472" duration="2577000" />
     </task>
     <servers />
   </component>
